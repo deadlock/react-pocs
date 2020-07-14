@@ -1,0 +1,60 @@
+
+.input {
+  background: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  color: darkgray;
+  font-family: 'EncodeSans-Regular', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 5px;
+  padding: 8px 0 8px 12px;
+  width: calc(100% - 14px);
+
+  &:placeholder {
+    color: darkgray;
+  }
+
+  &:-webkit-autofill {
+    filter: saturate(0.8) hue-rotate(0deg);
+    -webkit-text-fill-color: darkgrey
+  }
+
+  &:focus {
+    border-color:darkgray;
+    outline: none;
+  }
+}
+
+.--error {
+  border-color: red;
+}
+
+.label {
+  color: darkgray;
+  font-family: 'EncodeSans-Medium', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.error-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 8px;
+  margin-top: 6px;
+}
+
+.error-icon {
+  height: 8px;
+  width: 8px;
+}
+
+.error-text {
+  color: red;
+  font-family: 'EncodeSans-Medium', sans-serif;
+  font-size: 10px;
+  line-height: 10px;
+  margin: 0 0 0 6px;
+}
